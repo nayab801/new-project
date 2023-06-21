@@ -1,10 +1,11 @@
 #### Stage 1: Build the application
 FROM openjdk:8-jdk-alpine as build
-
+RUN apk add dos2unix
 # Set the current working directory inside the image
 WORKDIR /app
 
 # Copy maven executable to the image
+RUN dos2unix mvnw
 COPY mvnw .
 COPY .mvn .mvn
 
