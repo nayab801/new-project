@@ -5,8 +5,8 @@ RUN apk add dos2unix
 WORKDIR /app
 
 # Copy maven executable to the image
-RUN dos2unix mvnw
 COPY mvnw .
+RUN dos2unix mvnw
 COPY .mvn .mvn
 
 # Copy the pom.xml file
