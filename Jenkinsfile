@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('check out') {
             steps {
-              checkout scm
+              checkout scm  
             }
         }
         stage('docker compose stop') {
