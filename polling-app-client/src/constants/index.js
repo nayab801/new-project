@@ -1,4 +1,4 @@
-export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://https://polling-server-route-sh030348-dev.apps.sandbox-m3.1530.p1.openshiftapps.com/api';
+export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://polling-server-route-sh030348-dev.apps.sandbox-m3.1530.p1.openshiftapps.com/api';
 export const ACCESS_TOKEN = 'accessToken';
 
 export const POLL_LIST_SIZE = 30;
